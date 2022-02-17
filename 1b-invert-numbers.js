@@ -29,3 +29,18 @@ invertNumbers([0]) // => [0]
 invertNumbers([]) // => []
 
 */
+
+/**
+ * Function to invert psotivity of numbers
+ * @param {array} numbers - array of numbers
+ * @returns {array} inverted array of numbers
+ */
+
+function invertNumbers(numbers){
+    let invertedNumbers = [];
+    for (let number of numbers){
+        invertedNumbers.push(number * -1);
+    }
+    return invertedNumbers;
+}
+
