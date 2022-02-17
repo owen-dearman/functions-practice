@@ -26,3 +26,21 @@ greetings(["Bob", "Jimmy", "Sara"]) // => ["Hello, Bob!", "Hello, Jimmy!", "Hell
 greetings([]) // => []
 
 */
+
+/**
+ * Provides a greeting for each name in the array
+ * @param {array} names - array of names
+ * @returns {array} greeting for each name
+ */
+
+function greetings(names){
+    let nameGreetings = [];
+    for (let name of names){
+        let greetingTemplate = "Hello, !"
+        let indGreeting = greetingTemplate.splice(6,0,name);
+        nameGreetings.push(indGreeting);
+    }
+    return nameGreetings
+}
+
+//Test Cases
