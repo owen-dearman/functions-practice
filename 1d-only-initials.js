@@ -1,5 +1,5 @@
 // Function that takes an array of names and returns an array of initials
-
+"use strict"
 /*
 Function onlyInitials
 Parameters:
