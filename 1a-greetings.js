@@ -44,3 +44,5 @@ function greetings(names){
 }
 
 //Test Cases
+console.log("greetings(['Sam'])", greetings(["Sam"]), " Hello, Sam!")
+console.log("greetings(['Bob', 'Jimmy', 'Sara'])", greetings(["Bob", "Jimmy", "Sara"]), "['Hello, Bob!', 'Hello, Jimmy!', 'Hello, Sara!']")
