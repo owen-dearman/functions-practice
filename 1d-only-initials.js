@@ -26,5 +26,21 @@ return INITIALS
 onlyInitials(["Ben Johnson"]) // => ["B.J."]
 onlyInitials(["Adam Bowler", "Claire Devilson", "Edward Fox"]) // => ["A.B.", "C.D.", "E.F."]
 
-
 */
+
+/**
+ * Returns array of initials from array of names
+ * @param {array} names - array of names
+ * @returns {array} array of initials
+ */
+
+function onlyInitials(names){
+    let initials = [];
+    for (let name of names){
+        let nameToInd = name.exec(/[A-Z]/);
+        let indInitials = nameToInd.join(".");
+        indInitials = indInitials + ".";
+        initials.push(indInitials);
+    }
+    return initials;
+}
