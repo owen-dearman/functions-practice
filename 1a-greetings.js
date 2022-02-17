@@ -12,8 +12,7 @@ Returns:
 set GREETING-NAMES to an empty array
 
 for NAME in array NAMES do
-    set GREETING-TEMPLATE to be a string "Hello, !"
-    splice NAME into GREETING-TEMPLATE at index 6.
+    set GREETING-TEMPLATE to a string of "Hello, NAME!"
     add GREETING-TEMPLATE to the end of GREETING-NAMES
 endfor
 
@@ -43,5 +42,5 @@ function greetings(names){
 }
 
 //Test Cases
-console.log("greetings(['Sam'])", greetings(["Sam"]), " Hello, Sam!")
+console.log("greetings(['Sam'])", greetings(["Sam"]), " [Hello, Sam!]")
 console.log("greetings(['Bob', 'Jimmy', 'Sara'])", greetings(["Bob", "Jimmy", "Sara"]), "['Hello, Bob!', 'Hello, Jimmy!', 'Hello, Sara!']")
