@@ -44,3 +44,9 @@ function invertNumbers(numbers){
     return invertedNumbers;
 }
 
+//Test Cases
+console.log("invertNumbers([1,2,3])",invertNumbers([1,2,3])," [-1, -2, -3]")
+console.log("invertNumbers([-1,-2,-3])",invertNumbers([-1,-2,-3])," [1, 2, 3]")
+console.log("invertNumbers([-1,10,50,-50])",invertNumbers([-1,10,50,-50])," [1, -10, -50, 50]")
+console.log("invertNumbers([0])",invertNumbers([0])," [-0]")
+console.log("invertNumbers([])",invertNumbers([])," []")
