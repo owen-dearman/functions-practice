@@ -37,10 +37,19 @@ onlyInitials(["Adam Bowler", "Claire Devilson", "Edward Fox"]) // => ["A.B.", "C
 function onlyInitials(names){
     let initials = [];
     for (let name of names){
-        let nameToInd = name.exec(/[A-Z]/);
-        let indInitials = nameToInd.join(".");
-        indInitials = indInitials + ".";
-        initials.push(indInitials);
+        let indInitials = [];
+        for (let letter of name){
+            if (/[A-Z]/.test(letter) === true){
+                indInitials.push(letter);
+            }
+        }
+        let personsInitials = indInitials.join(".");
+        personsInitials = personsInitials + ".";
+        initials.push (personsInitials);
     }
     return initials;
 }
+
+//Test Cases
+console.log("onlyInitials(['Ben Johnson'])",onlyInitials(["Ben Johnson"]) ," ['B.J.']")
+console.log("onlyInitials('Adam Bowler', 'Claire Devilson', 'Edward Fox')",onlyInitials(["Adam Bowler", "Claire Devilson", "Edward Fox"]) ," ['A.B.', 'C.D.', 'E.F.']")
