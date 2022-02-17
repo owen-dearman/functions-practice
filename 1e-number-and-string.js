@@ -30,3 +30,19 @@ return NUMBER-AND-STRING
                 
 */
 
+/**
+ * Returns an array of objects with number and string
+ * @param {array} numbers - array of numbers
+ * @returns {object} number and string
+ */
+
+function numberAndString(numbers){
+    let numberStringObjects = [];
+    for (let number of numbers){
+        let numberMode = {asNumber: number};
+        let stringMode = {asString: number.toString()};
+        let indObject = Object.assign(numberMode, stringMode);
+        numberStringObjects.push(indObject);
+    }
+    return numberStringObjects;
+}
