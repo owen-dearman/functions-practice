@@ -24,3 +24,18 @@ Test Cases
 countStrings(["banana"]) // => [7]
 countStrings(["apple", "cheese", "lemonade"]) // => [5, 6, 8]
 */
+
+/**
+ * Function that counts length of strings in array
+ * @param {array} strings - array of strings
+ * @returns {array} length of strings in array
+ */
+
+function countStrings(strings){
+    let stringCounts = [];
+    for (let string of strings){
+        let stringLength = string.length();
+        stringCounts.push(stringLength);
+    }
+    return stringCounts;
+}
