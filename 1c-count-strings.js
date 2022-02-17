@@ -21,7 +21,7 @@ return STRING-COUNTS
 ====================================
 Test Cases
 
-countStrings(["banana"]) // => [7]
+countStrings(["banana"]) // => [6]
 countStrings(["apple", "cheese", "lemonade"]) // => [5, 6, 8]
 */
 
@@ -34,8 +34,12 @@ countStrings(["apple", "cheese", "lemonade"]) // => [5, 6, 8]
 function countStrings(strings){
     let stringCounts = [];
     for (let string of strings){
-        let stringLength = string.length();
+        let stringLength = string.length;
         stringCounts.push(stringLength);
     }
     return stringCounts;
 }
+
+//Test Cases
+console.log("countStrings(['banana'])", countStrings(["banana"]), " [6]")
+console.log("countStrings(['apple', 'cheese', 'lemonade'])", countStrings(["apple", "cheese", "lemonade"]), " [5, 6, 8]")
