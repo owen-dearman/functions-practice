@@ -36,8 +36,7 @@ greetings([]) // => []
 function greetings(names){
     let nameGreetings = [];
     for (let name of names){
-        let greetingTemplate = "Hello, !"
-        let indGreeting = greetingTemplate.splice(6,0,name);
+        let indGreeting = `Hello, ${name}!`
         nameGreetings.push(indGreeting);
     }
     return nameGreetings
