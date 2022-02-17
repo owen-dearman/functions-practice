@@ -46,3 +46,6 @@ function numberAndString(numbers){
     }
     return numberStringObjects;
 }
+
+console.log("[1, 2, 3]", numberAndString([1, 2, 3]), "[{asNumber: 1, asString: '1'}, {asNumber: 2, asString: '2'}, asNumber: 3, asString: '3'}]")
+console.log("[4, -3.2]", numberAndString([4, -3.2]),"[{asNumber: 4, asString: '4'}, {asNumber: -3.2, asString = -3.2}]")
