@@ -28,7 +28,7 @@ Test Cases
 
 [{name: "Bob", type: "legendary"}] // => ["Bob is a legendary type Pokemon"]
 [{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]
- // => ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."]
+ // => ['Bulbasaur is a grass type Pokémon.', 'Charmander is a fire type Pokémon.', 'Squirtle is a water type Pokémon.']
 */
 
 /**
@@ -45,3 +45,8 @@ function pokemonTypes(pokemonInformation){
     }
     return pokemonDescription;
 }
+
+//Test Cases
+console.log("pokemonTypes([{name: 'Bob', type: 'legendary'}])", pokemonTypes([{name: "Bob", type: "legendary"}]) ," ['Bob is a legendary type Pokemon']")
+console.log("pokemonTypes([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }])", pokemonTypes([{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]) ," ['Bulbasaur is a grass type Pokémon.', 'Charmander is a fire type Pokémon.', 'Squirtle is a water type Pokémon.']")
+console.log("pokemonTypes([])", pokemonTypes([]) ," []")
