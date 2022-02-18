@@ -30,3 +30,18 @@ Test Cases
 [{ name: 'Bulbasaur', type: 'Grass' }, { name: 'Charmander', type: 'Fire' }, { name: 'Squirtle', type: 'Water' }]
  // => ["Bulbasaur is a grass type Pokémon.", "Charmander is a fire type Pokémon.", "Squirtle is a water type Pokémon."]
 */
+
+/**
+ * Returns description of each Pokemon from object array
+ * @param {array} pokemonInformation - Name and types of the Pokemon
+ * @returns {array} - array of strings, descriptions
+ */
+
+function pokemonTypes(pokemonInformation){
+    let pokemonDescription = [];
+    for (let pokemon of pokemonInformation){
+        let descriptiveSentence = `${pokemon["name"]} is a ${pokemon["type"]} type Pokemon.`
+        pokemonDescription.push(descriptiveSentence);
+    }
+    return pokemonDescription;
+}
