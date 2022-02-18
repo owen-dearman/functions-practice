@@ -1,3 +1,4 @@
+"use strict"
 //Function that takes and array of names and returns an array with a greeting for each of those names
 /*
 Function: greetings
@@ -27,14 +28,20 @@ greetings([]) // => []
 */
 
 /**
- * Provides a greeting for each name in the array
- * @param {array} names - array of names
- * @returns {array} greeting for each name
+ * 
+ * @param {string} name - name to  greet 
+ * @returns {string} greeting
  */
 
 function greetMe(name){
     return `Hello, ${name}!`
 }
+
+/**
+ * Provides a greeting for each name in the array
+ * @param {array} names - array of names
+ * @returns {array} greeting for each name
+ */
 
  function greetings(names){
     let nameGreetings = names.map(greetMe);

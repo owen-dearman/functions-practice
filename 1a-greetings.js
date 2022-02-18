@@ -1,3 +1,4 @@
+"use strict"
 //Function that takes and array of names and returns an array with a greeting for each of those names
 /*
 Function: greetings
